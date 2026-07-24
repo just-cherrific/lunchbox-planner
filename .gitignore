@@ -1,0 +1,7 @@
+node_modules/
+.vercel/
+*.inspect.ndjson
+*_preview.png
+Git-*-64-bit.exe
+.hko-run/
+.work/

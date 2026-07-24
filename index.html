@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f766e" />
+    <title>Lunchbox Planner</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <p class="eyebrow">SCHOOL KITCHEN</p>
+        <h1>Lunchbox planner</h1>
+        <p class="intro">Select a date to see the expected number of meals to prepare.</p>
+      </section>
+      <section class="card" aria-labelledby="dates-title">
+        <div class="card-heading">
+          <div>
+            <h2 id="dates-title">Next 7 days</h2>
+            <p id="range-label"></p>
+          </div>
+          <p class="updated" id="updated-label">Loading…</p>
+        </div>
+        <div id="date-grid" class="date-grid" aria-label="Calendar dates"></div>
+      </section>
+      <section class="detail card" id="detail" aria-live="polite"></section>
+      <p class="note">Expected meals use the recorded forecast where available; otherwise, the estimate is 65% of the planned student count. Edit <code>public/meal-data.json</code> to update the plan.</p>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "school-lunch-calendar",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "daily-update": "node scripts/daily-update.mjs"
+  }
+}
